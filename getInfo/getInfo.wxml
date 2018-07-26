@@ -1,0 +1,22 @@
+<!--getInfo/getInfo.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section">
+    <view class="section__title">输入学生id（应该要换成学生名字）：</view>
+    <input name="input" placeholder="please input here" auto-focus/>
+  </view>
+  <text>student信息：</text>
+  <!-- <view wx:for="{{datas}}" wx:for-index="key" wx:for-item="value">
+    {{key}} : {{value}} // 这种写法也行，但要切片使用
+  </view> -->
+  <view>
+    <text>姓名：{{student_name}} \n</text>
+    <text>ID：{{student_id}} \n</text>
+    <text>face IDs：{{face_ids}} \n</text>
+    <text>所在分组：{{group_ids}} \n</text>
+    <text>Tag：{{tag}} \n</text>
+  </view>
+  <view class="btn-area">
+    <button formType="submit">Submit</button>
+    <button formType="reset">Reset</button>
+  </view>
+</form>

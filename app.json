@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "index/index",
+    "logs/logs",
+    "funcs/funcs",
+    "getGroupIds/getGroupIds",
+    "getStuIds/getStuIds",
+    "getFaceIds/getFaceIds",
+    "getFaceInfo/getFaceInfo",
+    "getInfo/getInfo",
+    "faceIdentify/faceIdentify"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarTextStyle": "black"
+  }
+}

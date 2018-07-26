@@ -1,0 +1,18 @@
+<view class="page-body">
+  <view class="page-body-wrapper">
+    <block wx:if="{{src}}">
+      <image mode="widthFix" src="{{src}}"></image>
+    </block>
+    <block wx:else>
+      <camera device-position="back" flash="off" binderror="error"></camera>
+    </block>
+    <view wx:if="{{src}}" class="btn-area">
+      <button type="primary" bindtap="upload" class="btn-area">上传</button>
+      <button type="warn" bindtap="rePhoto" class="btn-area">重拍</button>
+    </view>
+    <view wx:else class="btn-area">
+      <button type="primary" bindtap='takePhoto' class="btn-area">拍照</button>
+      <button type="primary" bindtap='allFuncs' class="btn-area">功能</button>
+    </view>
+  </view>
+</view>

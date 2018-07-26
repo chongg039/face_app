@@ -1,0 +1,17 @@
+<!--getStuIds/getStuIds.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section">
+    <text>所有分组：{{all_group_ids}}</text>
+  </view>
+  <view class="section">
+    <view class="section__title">输入组号：</view>
+    <input name="input" placeholder="please input here" auto-focus/>
+  </view>
+  <view class="section">
+    <text>该组学生：{{students}}</text>
+  </view>
+  <view class="btn-area">
+    <button formType="submit">Submit</button>
+    <button formType="reset">Reset</button>
+  </view>
+</form>

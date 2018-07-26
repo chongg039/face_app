@@ -1,0 +1,11 @@
+<!--logs.wxml-->
+<view>
+  <image mode="widthFix" src="{{img}}"></image>
+  <view wx:for="{{identify_data}}" wx:for-index="key" wx:for-item="value">
+    {{key}} : {{value}}
+  </view>
+  <view>
+    <text>time_ms: {{time}}</text>
+    <text>errorcode: {{errorcode}}</text>
+  </view>
+</view>

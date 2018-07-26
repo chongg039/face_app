@@ -1,0 +1,15 @@
+<!--getFaceInfo/getFaceInfo.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section">
+    <view class="section__title">输入人脸id（应该要换成学生名字）：</view>
+    <input name="input" placeholder="please input here" auto-focus/>
+  </view>
+  <text>face信息：</text>
+  <view wx:for="{{face_info}}" wx:for-index="key" wx:for-item="value">
+    {{key}} : {{value}}
+  </view>
+  <view class="btn-area">
+    <button formType="submit">Submit</button>
+    <button formType="reset">Reset</button>
+  </view>
+</form>
