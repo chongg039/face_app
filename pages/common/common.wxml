@@ -1,0 +1,6 @@
+<!--pages/common/common.wxml-->
+<template name="foot">
+  <navigator class="page-foot" openType="switchTab" url="/pages/CAM/index" hover-class="none">
+    <text>CM Studio</text>
+  </navigator>
+</template>

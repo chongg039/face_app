@@ -1,0 +1,22 @@
+/* pages/common/common.wxss */
+.index-desc {
+  margin-top: 20rpx;
+  color: #888888;
+  font-size: 28rpx;
+  padding: 80rpx;
+  text-align: center;
+}
+.page-foot{
+  margin: 380rpx 0 0 0;
+  text-align: center;
+  color: #888888;
+  font-size: 25rpx;
+}
+.index-logo {
+  width: 158rpx;
+  height: 128rpx;
+}
+.index-hd {
+  padding: 80rpx;
+  text-align: center;
+}

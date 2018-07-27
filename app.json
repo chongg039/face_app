@@ -1,18 +1,36 @@
 {
   "pages": [
-    "index/index",
-    "logs/logs",
-    "funcs/funcs",
-    "getGroupIds/getGroupIds",
-    "getStuIds/getStuIds",
-    "getFaceIds/getFaceIds",
-    "getFaceInfo/getFaceInfo",
-    "getInfo/getInfo",
-    "faceIdentify/faceIdentify"
+    "pages/CAM/index",
+    "pages/API/index",
+    "pages/common/common",
+    "pages/CAM/takePhoto/takePhoto",
+    "pages/CAM/uploadPhoto/uploadPhoto"
   ],
   "window": {
-    "backgroundTextStyle": "light",
+    "backgroundTextStyle": "black",
     "navigationBarBackgroundColor": "#F8F8F8",
-    "navigationBarTextStyle": "black"
+    "navigationBarTitleText": "Face Detected",
+    "navigationBarTextStyle": "black",
+    "backgroundcColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#F8F8F8",
+    "list": [
+      {
+        "pagePath": "pages/CAM/index",
+        "iconPath": "images/home_before.png",
+        "selectedIconPath": "images/home_after.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/API/index",
+        "iconPath": "images/function_before.png",
+        "selectedIconPath": "images/function_after.png",
+        "text": "功能"
+      }
+    ]
   }
 }

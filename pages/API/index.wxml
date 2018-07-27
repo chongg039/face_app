@@ -1,0 +1,15 @@
+<!--pages/API/index.wxml-->
+<view class='page-body'>
+  <view class='index-hd'>
+    <view class="index-desc">
+      <text>{{title}}</text>
+    </view>
+  </view>
+  <view class="btn-area">
+    <button type="primary" plain="true" bindtap="directToCamera">获取所有分组</button>
+    <button type="primary" plain="true" bindtap="directToCamera">获取分组中的学生列表</button>
+    <button type="primary" plain="true" bindtap="directToCamera">获取某学生的人脸列表</button>
+    <button type="primary" plain="true" bindtap="directToCamera">获取某人脸信息</button>
+    <button type="primary" plain="true" bindtap="directToCamera">获取某学生信息</button>
+  </view>
+</view>

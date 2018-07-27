@@ -1,0 +1,15 @@
+<!--pages/CAM/index.wxml-->
+<import src="../common/common.wxml" />
+
+<view class='page-body'>
+  <view class='index-hd'>
+    <image class="index-logo" src="../../images/logo.png"></image>
+    <view class="index-desc">
+      <text>{{title}}</text>
+    </view>
+  </view>
+  <view class="btn-area">
+    <button type="primary" plain="true" bindtap="directToCamera">开始识别</button>
+  </view>
+  <template is="foot" />
+</view>

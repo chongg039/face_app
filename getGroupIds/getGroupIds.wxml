@@ -1,2 +1,0 @@
-<!--getGroupIds/getGroupIds.wxml-->
-<text>所有分组：{{groups}}</text>

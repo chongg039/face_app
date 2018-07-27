@@ -1,16 +1,19 @@
 {
 	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
 	"setting": {
-		"urlCheck": false,
+		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.9.93",
+	"libVersion": "2.2.1",
 	"appid": "wxc354de4be611c3b5",
-	"projectname": "camera%E7%BB%84%E4%BB%B6",
+	"projectname": "face_new",
 	"isGameTourist": false,
 	"condition": {
 		"search": {

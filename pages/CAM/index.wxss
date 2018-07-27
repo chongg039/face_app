@@ -1,0 +1,3 @@
+/* pages/CAM/index.wxss */
+@import "../common/common.wxss";
+/* @import "./newCamera/newCamera.wxss"; */

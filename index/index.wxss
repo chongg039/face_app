@@ -1,4 +1,0 @@
-camera {
-  width: 90%; 
-  height: 500px;
-}
