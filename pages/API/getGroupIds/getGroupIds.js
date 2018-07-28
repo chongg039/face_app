@@ -1,41 +1,41 @@
-// pages/CAM/index.js
-const getGroupIdsUrl = require("../../config.js").getGroupIdsUrl
+// pages/API/getGroupIds/getGroupIds.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    title: "这是一个面向学校的人脸识别小程序，旨在帮助教师识别学生身份。",
+    index: 0,
+    groups: wx.getStorageSync("all_group_ids"),
+    title: "选择想要查看的分组列表并提交，\n查看该分组中所有学生。", // 换行符在<view>中无效
+    items: [] // 这里如果没有会报错undefined，要解决
   },
 
-  directToCamera() {
-    wx.navigateTo({
-      url: './takePhoto/takePhoto',
+  bindPickerChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      index: e.detail.value
     })
+  },
+
+  radioChange: function (e) {
+    console.log('radio发生change事件，携带value值为：', e.detail.value)
+
+    var items = this.data.items;
+    for (var i = 0, len = items.length; i < len; ++i) {
+      items[i].checked = items[i].value == e.detail.value
+    }
+
+    this.setData({
+      items: items
+    });
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let _this = this
-    wx.request({
-      url: getGroupIdsUrl,
-      header: {
-        'content-type': 'application/json' // 默认值
-      },
-      method: 'POST',
-      success: function (res) {
-        _this.setData({
-          groups: res.data['group_ids']
-        })
-        wx.setStorageSync('all_group_ids', _this.data.groups) // 这样才能获取setData的值
-      },
-      fail: function () {
-        console.log("fail")
-      }
-    })
+    console.log(this.data.groups)
   },
 
   /**

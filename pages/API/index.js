@@ -8,6 +8,32 @@ Page({
     title: "这里是小程序提供的全部功能，部分功能可能不提供界面只提供函数，以供别的界面逻辑使用"
   },
 
+  getGroupIds() {
+    wx.navigateTo({
+      url: './getGroupIds/getGroupIds'
+    })
+  },
+  getStuIds() {
+    wx.navigateTo({
+      url: './getStuIds/getStuIds'
+    })
+  },
+  getFaceIds() {
+    wx.navigateTo({
+      url: './getFaceIds/getFaceIds'
+    })
+  },
+  getFaceInfo() {
+    wx.navigateTo({
+      url: './getFaceInfo/getFaceInfo'
+    })
+  },
+  getInfo() {
+    wx.navigateTo({
+      url: './getInfo/getInfo'
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

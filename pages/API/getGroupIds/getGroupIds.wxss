@@ -1,0 +1,7 @@
+/* pages/API/getGroupIds/getGroupIds.wxss */
+@import "../../common/common.wxss";
+
+.picker{
+  padding: 19rpx 26rpx;
+  background-color: #FFFFFF;
+}

@@ -1,4 +1,6 @@
 // pages/CAM/uploadPhoto/uploadPhoto.js
+const faceIdentifyUrl = require("../../../config.js").faceIdentifyUrl
+
 Page({
 
   /**
@@ -14,7 +16,7 @@ Page({
     let imagePath = options.imagePath
     let _this = this
     wx.uploadFile({
-      url: 'http://192.168.0.109:2333/face/api/faceidentify',
+      url: faceIdentifyUrl,
       header: {
         'content-type': 'multipart/form-data' // 默认值
       },
