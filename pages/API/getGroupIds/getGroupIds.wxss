@@ -5,3 +5,6 @@
   padding: 19rpx 26rpx;
   background-color: #FFFFFF;
 }
+.btn-area {
+  margin-top: 200rpx;
+}

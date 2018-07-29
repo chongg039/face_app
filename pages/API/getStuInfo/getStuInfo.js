@@ -1,41 +1,11 @@
-// pages/API/index.js
+// pages/API/getStuInfo/getStuInfo.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    title: "这里是小程序提供的全部功能，部分功能可能不提供界面只提供函数，以供别的界面逻辑使用"
-  },
-
-  getGroupIds() {
-    wx.navigateTo({
-      url: './getGroupIds/getGroupIds'
-    })
-  },
-  getStuIds() {
-    wx.showToast({
-      title: '请通过上一功能中的按钮访问',
-      icon: 'none',
-      duration: 1000,
-      mask: true,
-      complete: wx.hideToast()
-    })
-  },
-  getFaceIds() {
-    wx.navigateTo({
-      url: './getFaceIds/getFaceIds'
-    })
-  },
-  getFaceInfo() {
-    wx.navigateTo({
-      url: './getFaceInfo/getFaceInfo'
-    })
-  },
-  getInfo() {
-    wx.navigateTo({
-      url: './getInfo/getInfo'
-    })
+  
   },
 
   /**

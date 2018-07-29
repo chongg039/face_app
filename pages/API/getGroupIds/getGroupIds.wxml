@@ -23,7 +23,7 @@
       </view>
     </view>
   </view>
-  <view class="btn-area" id="buttonContainer">
-    <button type="primary" plain="true">查看</button>
+  <view class="btn-area">
+    <button type="primary" plain="true" bindtap='bindAllStu'>查看</button>
   </view>
 </view>

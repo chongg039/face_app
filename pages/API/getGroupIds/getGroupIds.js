@@ -18,18 +18,25 @@ Page({
     })
   },
 
-  radioChange: function (e) {
-    console.log('radio发生change事件，携带value值为：', e.detail.value)
-
-    var items = this.data.items;
-    for (var i = 0, len = items.length; i < len; ++i) {
-      items[i].checked = items[i].value == e.detail.value
-    }
-
-    this.setData({
-      items: items
-    });
+  bindAllStu: function() {
+    let groups = this.data.groups
+    wx.navigateTo({
+      url: '../getStuIds/getStuIds?group=' + groups[this.data.index],
+    })
   },
+
+  // radioChange: function (e) {
+  //   console.log('radio发生change事件，携带value值为：', e.detail.value)
+
+  //   var items = this.data.items;
+  //   for (var i = 0, len = items.length; i < len; ++i) {
+  //     items[i].checked = items[i].value == e.detail.value
+  //   }
+
+  //   this.setData({
+  //     items: items
+  //   });
+  // },
 
   /**
    * 生命周期函数--监听页面加载

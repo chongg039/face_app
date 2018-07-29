@@ -1,6 +1,6 @@
 /* pages/common/common.wxss */
 .index-desc {
-  margin-top: 20rpx;
+  margin-top:0rpx;
   color: #888888;
   font-size: 28rpx;
   padding: 80rpx;

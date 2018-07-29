@@ -1,0 +1,24 @@
+<!--pages/API/getStuIds/getStuIds.wxml-->
+<view class="container">
+    <view class="content">
+        <view class="img-list2">
+            <view class="ul">
+                <view class="li" wx:for="{{students}}" wx:for-item="item">
+                    <navigator url="url">
+                        <view class="title"><text>学号：{{item.id}}</text></view>
+                        <view class="info">
+                            <text>姓名：{{item.name}}</text>
+                            <text>人脸：{{item.faces}}</text>
+                            <text>备注：{{item.tag}}</text>
+                        </view>
+                        <view class="start">
+                            <text>分组：{{item.groups}}</text>
+                        </view>
+                        <view class="image"><image src="{{item.src}}" mode="aspectFill"></image></view>
+                    </navigator>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+

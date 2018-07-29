@@ -5,7 +5,9 @@
     "pages/common/common",
     "pages/CAM/takePhoto/takePhoto",
     "pages/CAM/uploadPhoto/uploadPhoto",
-    "pages/API/getGroupIds/getGroupIds"
+    "pages/API/getGroupIds/getGroupIds",
+    "pages/API/getStuIds/getStuIds",
+    "pages/API/getStuInfo/getStuInfo"
   ],
   "window": {
     "backgroundTextStyle": "black",
